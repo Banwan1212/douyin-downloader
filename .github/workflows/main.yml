@@ -6,7 +6,7 @@ on:
       config_path:
         description: '配置文件路径'
         required: true
-        default: 'config.yaml'
+        default: 'config.yml'
       target_folder:
         description: '目标文件夹'
         required: true
@@ -36,13 +36,13 @@ jobs:
     - name: 复制配置文件
       run: |
         mkdir -p ${{ github.event.inputs.target_folder }}
-        cp ${{ github.event.inputs.config_path }} ${{ github.event.inputs.target_folder }}/config.yaml
+        cp ${{ github.event.inputs.config_path }} ${{ github.event.inputs.target_folder }}/config.yml
 
     - name: 插入变量到第3行
       run: |
-        sed -i '8i ${{ github.event.inputs.insert_line }}' ${{ github.event.inputs.target_folder }}/config.yaml
+        sed -i '8i ${{ github.event.inputs.insert_line }}' ${{ github.event.inputs.target_folder }}/config.yml
         echo "插入后的配置文件内容："
-        cat ${{ github.event.inputs.target_folder }}/config.yaml
+        cat ${{ github.event.inputs.target_folder }}/config.yml
 
     - name: 运行测试
       run: |
