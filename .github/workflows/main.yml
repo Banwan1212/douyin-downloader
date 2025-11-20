@@ -33,6 +33,8 @@ jobs:
       run: |
         pip install -r requirements.txt
         pip install playwright rich pyyaml tqdm
+        pip install playwright
+        playwright install chromium
         git clone https://github.com/jiji262/douyin-downloader.git
     - name: 复制配置文件
       run: |
