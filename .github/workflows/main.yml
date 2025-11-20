@@ -38,7 +38,7 @@ jobs:
         pip install playwright rich pyyaml tqdm
         pip install playwright
         playwright install chromium
-        git clone https://github.com/jiji262/douyin-downloader.git
+        git clone https://github.com/Banwan1212/douyin-downloader.git
     - name: 复制配置文件
       run: |
         mkdir -p ${{ github.event.inputs.target_folder }}
