@@ -21,7 +21,9 @@ end_time: ""
 
 # Cookie 配置（三选一，按优先级从上到下）
 # 1) 自动获取（需要已安装 Playwright：pip install playwright && playwright install）
-cookies: auto
+# cookies: auto
+
+
 
 # 2) 直接粘贴整串 Cookie 字符串（示例，使用时请注释掉上面的 cookies: auto）
 # cookies: "msToken=YOUR_MS_TOKEN; ttwid=YOUR_TTWID; odin_tt=YOUR_ODIN_TT; ...;"
