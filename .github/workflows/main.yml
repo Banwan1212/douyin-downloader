@@ -10,11 +10,11 @@ on:
       target_folder:
         description: '目标文件夹'
         required: true
-        default: 'app/config'
+        default: './douyin-downloader'
       insert_line:
         description: '插入到第3行的内容'
         required: true
-        default: 'injected_variable: true'
+        default: '  - https://v.douyin.com/gHfPkTLaKQw/'
 
 jobs:
   test:
